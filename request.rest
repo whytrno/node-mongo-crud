@@ -1,0 +1,26 @@
+GET http://localhost:3000/product
+###
+GET http://localhost:3000/product/6354a5c34fd49d2dc9121fd9
+
+###
+POST http://localhost:3000/product
+Content-Type: application/json
+
+# disini harus ada enter, kalau gaada jadi error
+# karena pembatas header dan content
+{
+    "title": "test",
+    "price": 10000
+}
+
+###
+PATCH http://localhost:3000/product/6354a61825c79358906e7aea
+Content-Type: application/json
+
+{
+    "title": "coba ubah",
+    "price": 3333
+}
+
+###
+DELETE http://localhost:3000/product/6354a61825c79358906e7aea
